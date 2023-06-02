@@ -1,0 +1,16 @@
+package org.example;
+
+public class Ciudad {
+
+    private String NombreCiudad;
+
+    public String getNombreCiudad() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setNombreCiudad(String NombreCiudad) {
+        throw new UnsupportedOperationException();
+    }
+
+}
