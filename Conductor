@@ -1,1 +1,46 @@
 
+package org.example;
+
+public class Conductor {
+
+    private String Nombre;
+    private String Apellido;
+    private int NumeroTelefonico;
+    private String TipoLicencia;
+
+    public String getNombre() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setNombre(String Nombre) {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getApellido() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setApellido(String Apellido) {
+        throw new UnsupportedOperationException();
+    }
+
+    public int getNumeroTelefonico() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setNumeroTelefonico(int NumeroTelefonico) {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getTipoLicencia() {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setTipoLicencia(String TipoLicencia) {
+        throw new UnsupportedOperationException();
+    }
+
+}
