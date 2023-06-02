@@ -1,1 +1,36 @@
 
+package org.example;
+
+public class Bus {
+
+    private String Patente;
+    private String Marca;
+    private String Modelo;
+
+    public String getPatente() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setPatente(String Patente) {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getMarca() {
+        throw new UnsupportedOperationException();
+    }
+
+    public void setMarca(String Marca) {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getModelo() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setModelo(String Modelo) {
+        throw new UnsupportedOperationException();
+    }
+
+}
