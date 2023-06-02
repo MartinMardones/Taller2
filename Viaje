@@ -1,0 +1,48 @@
+package org.example;
+
+public class Viaje {
+
+    private String CiudadOrigen;
+    private String CiudadDestino;
+    private String HoraSalida;
+    private int HoraLlegada;
+
+    public String getCiudadOrigen() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setCiudadOrigen(String CiudadOrigen) {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getCiudadDestino() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setCiudadDestino(String CiudadDestino) {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getHoraSalida() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setHoraSalida(String HoraSalida) {
+        throw new UnsupportedOperationException();
+    }
+
+    public int getHoraLlegada() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setHoraLlegada(int HoraLlegada) {
+        throw new UnsupportedOperationException();
+    }
+
+}
+
+
