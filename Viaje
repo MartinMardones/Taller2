@@ -2,47 +2,45 @@ package org.example;
 
 public class Viaje {
 
-    private String CiudadOrigen;
-    private String CiudadDestino;
-    private String HoraSalida;
-    private int HoraLlegada;
+    private String ciudadOrigen;
+    private String ciudadDestino;
+    private String horaSalida;
+    private String horaLlegada;
 
     public String getCiudadOrigen() {
-        throw new UnsupportedOperationException();
+        return this.ciudadOrigen;
     }
 
 
-    public void setCiudadOrigen(String CiudadOrigen) {
-        throw new UnsupportedOperationException();
+    public void setCiudadOrigen(String ciudadOrigen) {
+        this.ciudadOrigen = ciudadOrigen;
     }
 
     public String getCiudadDestino() {
-        throw new UnsupportedOperationException();
+        return this.ciudadDestino;
     }
 
 
-    public void setCiudadDestino(String CiudadDestino) {
-        throw new UnsupportedOperationException();
+    public void setCiudadDestino(String ciudadDestino) {
+        this.ciudadDestino = ciudadDestino;
     }
 
     public String getHoraSalida() {
-        throw new UnsupportedOperationException();
+        return this.horaSalida;
     }
 
 
-    public void setHoraSalida(String HoraSalida) {
-        throw new UnsupportedOperationException();
+    public void setHoraSalida(String horaSalida) {
+        this.horaSalida = horaSalida;
     }
 
-    public int getHoraLlegada() {
-        throw new UnsupportedOperationException();
+    public String getHoraLlegada() {
+        return this.horaLlegada;
     }
 
 
-    public void setHoraLlegada(int HoraLlegada) {
-        throw new UnsupportedOperationException();
+    public void setHoraLlegada(String horaLlegada) {
+        this.horaLlegada = horaLlegada;
     }
 
 }
-
-
