@@ -1,9 +1,9 @@
-
 package org.example;
 
 import org.example.Bus;
 import org.example.Ciudad;
 import org.example.Conductor;
+import org.example.Viaje;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,23 +14,26 @@ public class EmpresaTransporte {
     private String direccion;
     private String redesSociales;
 
+    private List<Conductor> conductores;
+    private List<Ciudad> ciudades;
+    private List<Viaje> viajes;
+    private List<Bus> buses;
+
+
 
     public String getRut() {
         return this.rut;
     }
 
 
-
-    public String setRut(String rut) { {
-        this.rut = rut;
+    String getDireccion() {
+        return this.direccion;
     }
 
-    String getDireccion;()
-    {return this.direccion; }
 
-
-    public void setDireccion(String direccion)
-        {this.direccion = direccion;}
+    public void setDireccion(String direccion){
+        this.direccion = direccion;
+    }
 
     public String getRedesSociales()
     {return this.redesSociales;}
@@ -44,26 +47,18 @@ public class EmpresaTransporte {
             this.rut = rut;
             this.direccion = this.direccion;
             this.redesSociales = redesSociales;
-        }
-
-        public String toString(){
-            return "Rut: "+this.rut+", direccion: "+this.direccion+", redes sociales "+this.redesSociales;
-        }
-
-
-    }
-
-    private List<Conductor> conductores;
-    private List<Ciudad> ciudades;
-    private List<Viaje> viajes;
-    private List<Bus> buses;
-
-    public EmpresaTransporte(){
         this.conductores = new ArrayList<>();
         this.viajes = new ArrayList<> ();
         this.ciudades = new ArrayList<> ();
         this.buses = new ArrayList<> ();
+
+
+
+
+
     }
+
+
 
 
     public boolean agregarBus(String patente, String marca){
@@ -143,14 +138,6 @@ public class EmpresaTransporte {
         }
         return null;
     }
-    public List buscarConductor(String nombre){
-        ArrayList<Conductor> conductores = new ArrayList<> ();
-        for(Conductor conductor : this.conductores){
-            if(conductor.getNombre().equals(conductor)){
-                buses.add(conductor);
-            }
-        }
-        return buses;
-    }
+
 
     }
