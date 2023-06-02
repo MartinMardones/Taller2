@@ -1,39 +1,156 @@
 
 package org.example;
 
+import org.example.Bus;
+import org.example.Ciudad;
+import org.example.Conductor;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class EmpresaTransporte {
 
-    private String Rut;
-    private String Direccion;
-    private String RedesSociales;
+    private String rut;
+    private String direccion;
+    private String redesSociales;
+
 
     public String getRut() {
-        throw new UnsupportedOperationException();
-    }
-
-
-    public void setRut(String Rut) {
-        throw new UnsupportedOperationException();
-    }
-
-    public String getDireccion() {
-        throw new UnsupportedOperationException();
-    }
-
-
-    public void setDireccion(String Direccion) {
-        throw new UnsupportedOperationException();
-    }
-
-    public String getRedesSociales() {
-        throw new UnsupportedOperationException();
-    }
-
-
-    public void setRedesSociales(String RedesSociales) {
-        throw new UnsupportedOperationException();
+        return this.rut;
     }
 
 
 
-}
+    public String setRut(String rut) { {
+        this.rut = rut;
+    }
+
+    String getDireccion;()
+    {return this.direccion; }
+
+
+    public void setDireccion(String direccion)
+        {this.direccion = direccion;}
+
+    public String getRedesSociales()
+    {return this.redesSociales;}
+
+
+    public void setRedesSociales(String redesSociales) {
+            this.redesSociales = redesSociales;
+    }
+
+    public EmpresaTransporte(String rut, String direccion, String redesSociales) {
+            this.rut = rut;
+            this.direccion = this.direccion;
+            this.redesSociales = redesSociales;
+        }
+
+        public String toString(){
+            return "Rut: "+this.rut+", direccion: "+this.direccion+", redes sociales "+this.redesSociales;
+        }
+
+
+    }
+
+    private List<Conductor> conductores;
+    private List<Ciudad> ciudades;
+    private List<Viaje> viajes;
+    private List<Bus> buses;
+
+    public EmpresaTransporte(){
+        this.conductores = new ArrayList<>();
+        this.viajes = new ArrayList<> ();
+        this.ciudades = new ArrayList<> ();
+        this.buses = new ArrayList<> ();
+    }
+
+
+    public boolean agregarBus(String patente, String marca){
+        if(buscarBus(patente,marca) == null) {
+            Bus bus = new Bus (patente, marca);
+            this.buses.add(bus);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public boolean agregarBus(Bus bus){
+        if(buscarBus(bus.getPatente(),bus.getMarca()) == null){
+            this.buses.add(bus);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public Bus buscarBus(String patente, String marca){
+        for(Bus bus : this.buses){
+            if(bus.getPatente().equals(patente) && bus.getMarca().equals(marca)){
+                return bus;
+            }
+        }
+        return null;
+    }
+    public List buscarBus(String patente){
+        ArrayList<Bus> buses = new ArrayList<> ();
+        for(Bus bus : this.buses){
+            if(bus.getPatente().equals(patente)){
+                buses.add(bus);
+            }
+        }
+        return buses;
+    }
+
+    public boolean eliminarBus(String patente, String marca){
+        Bus bus= this.buscarBus (patente,marca);
+        if(bus != null){
+            this.buses.remove(bus);
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public boolean agregarConductor(String nombre, String apellido, int numeroTelefonico, String tipoLicencia ){
+        if(buscarConductor(nombre,apellido) == null) {
+            Conductor conductor = new Conductor (nombre, apellido);
+            this.conductores.add(conductor);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    public boolean agregarConductor(Conductor conductor){
+        if(buscarConductor(conductor.getNombre(),conductor.getApellido()) == null){
+            this.conductores.add(conductor);
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
+    public Conductor buscarConductor(String nombre, String apellido){
+        for(Conductor conductor : this.conductores){
+            if(conductor.getNombre().equals(nombre) && conductor.getApellido().equals(apellido)){
+                return conductor;
+            }
+        }
+        return null;
+    }
+    public List buscarConductor(String nombre){
+        ArrayList<Conductor> conductores = new ArrayList<> ();
+        for(Conductor conductor : this.conductores){
+            if(conductor.getNombre().equals(conductor)){
+                buses.add(conductor);
+            }
+        }
+        return buses;
+    }
+
+    }
