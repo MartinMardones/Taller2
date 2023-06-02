@@ -6,6 +6,7 @@ public class Bus {
     private String patente;
     private String marca;
     private String modelo;
+    private List<Viaje> viajes;
 
     public String getPatente() {
         return this.patente;
