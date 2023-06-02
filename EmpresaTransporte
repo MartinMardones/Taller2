@@ -1,1 +1,39 @@
 
+package org.example;
+
+public class EmpresaTransporte {
+
+    private String Rut;
+    private String Direccion;
+    private String RedesSociales;
+
+    public String getRut() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setRut(String Rut) {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getDireccion() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setDireccion(String Direccion) {
+        throw new UnsupportedOperationException();
+    }
+
+    public String getRedesSociales() {
+        throw new UnsupportedOperationException();
+    }
+
+
+    public void setRedesSociales(String RedesSociales) {
+        throw new UnsupportedOperationException();
+    }
+
+
+
+}
